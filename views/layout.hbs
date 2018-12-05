@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{title}}</title>
+    <script type="text/javascript" src="/javascripts/hangsuper.js"></script>
+  	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDou_t9CsqKF1BhmiPp-6uN_9FRSev399Q"></script>
+
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body class="wrapper">
+  <a id="top"> </a>
+	<div class="menu">
+		<div class="m_left">
+			<ul>
+				<li>
+					<a href="">Home</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="m_right">
+			<div class="m_right_l">
+				<img id="weather_i" src="" style="height: 40px;width: 40px;">
+				<span id="temp"></span>
+				<span id="location">
+				</span>
+			</div>
+			<div class="m_right_r">
+				<input class = "search" type="search" name="search" placeholder="eg. Chinese cuisine" onkeypress="hs.keyPress(event)">
+				<input id= "mylat" name="lat" type="hidden">
+				<input id="mylng" name="lng" type="hidden">
+				<input class ="btn_search" name="btn_search" type="button" value="Search">
+			</div>
+		</div>
+	</div>
+	<div id="loader"></div>
+	<div id="respones" class="animate-bottom">
+    	{{{body}}}
+    </div>
+  </body>
+</html>
