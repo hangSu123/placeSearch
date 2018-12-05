@@ -438,7 +438,7 @@ window.hangsper = window.hs = {
 	*/
 
   	setMarkers:function(map, camLat,camLng,camImage){
-		var image = "http://maps.google.com/mapfiles/kml/pal4/icon3.png";
+		var image = "https://maps.google.com/mapfiles/kml/pal4/icon3.png";
 		var infowindow = new google.maps.InfoWindow();
 		var camMarker, i;
 	    for (i = 0; i < camLat.length; i++) { 
@@ -477,7 +477,7 @@ window.hangsper = window.hs = {
 
 
 	displayWeather:function(temp,icon){
-		var iconURL = "http://openweathermap.org/img/w/";
+		var iconURL = "https://openweathermap.org/img/w/";
 		var weather_i = hs.getId("weather_i");
 		var t = hs.getId("temp");
 
